@@ -67,4 +67,11 @@ function spreadOut() {
 
 console.log(spreadOut());
 
+// Check for the presence of an element with indexOf()
+function quickCheck(arr, elem) {
+    return arr.indexOf(elem) != -1;
+}
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
 //
