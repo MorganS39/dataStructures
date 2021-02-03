@@ -25,4 +25,10 @@ function popShift(arr) {
 
 console.log(popShift(['challenge', 'is', 'not', 'complete']));
 
-// 
+// Remove items using splice() to remove any item in the array
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+    arr.splice(0, 1);
+    arr.splice(3);
+console.log(arr);
+
+//
