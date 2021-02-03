@@ -200,4 +200,38 @@ function countOnline(usersObj) {
     return result;
 }
 
-//
+// Generate an array of all object keys with Object.keys()
+let users = {
+    Alan: {
+      age: 27,
+      online: false
+    },
+    Jeff: {
+      age: 32,
+      online: true
+    },
+    Sarah: {
+      age: 48,
+      online: false
+    },
+    Ryan: {
+      age: 19,
+      online: true
+    }
+};
+
+function getArrayOfUsers(obj) {
+    if (
+      obj.hasOwnProperty('Alan') &&
+      obj.hasOwnProperty('Jeff') &&
+      obj.hasOwnProperty('Sarah') &&
+      obj.hasOwnProperty('Ryan')
+    ){
+      return Object.keys(obj);
+    }
+    return false;
+}
+
+console.log(getArrayOfUsers(users));
+
+//  Modify an array stored in an object
