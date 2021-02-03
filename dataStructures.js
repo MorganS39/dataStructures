@@ -13,7 +13,16 @@ function mixedNumbers(arr) {
     return arr;
   }
   
-  console.log(mixedNumbers(['IV', 5, 'six']));
-  // Notice the unshift and push MUST apply to arr not mixedNumbers
+console.log(mixedNumbers(['IV', 5, 'six']));
+// Notice the unshift and push MUST apply to arr not mixedNumbers
 
-  //
+// Remove items from an arry with pop()*end* and shift()*start*
+function popShift(arr) {
+    let popped = arr.pop(); 
+    let shifted = arr.shift(); 
+    return [shifted, popped];
+}
+
+console.log(popShift(['challenge', 'is', 'not', 'complete']));
+
+// 
